@@ -20,6 +20,8 @@
 		938EBE781882B91E00F6F6F0 /* sample01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938EBE771882B91E00F6F6F0 /* sample01Tests.m */; };
 		938EBE851882B94600F6F6F0 /* InfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 938EBE831882B94600F6F6F0 /* InfoWindow.m */; };
 		938EBE861882B94600F6F6F0 /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938EBE841882B94600F6F6F0 /* InfoWindow.xib */; };
+		938EBE881882D0AB00F6F6F0 /* sample01-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 938EBE551882B91E00F6F6F0 /* sample01-Info.plist */; };
+		938EBE931882D43400F6F6F0 /* sample01.icns in Resources */ = {isa = PBXBuildFile; fileRef = 938EBE921882D43400F6F6F0 /* sample01.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		938EBE821882B94600F6F6F0 /* InfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoWindow.h; sourceTree = "<group>"; };
 		938EBE831882B94600F6F6F0 /* InfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoWindow.m; sourceTree = "<group>"; };
 		938EBE841882B94600F6F6F0 /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
+		938EBE921882D43400F6F6F0 /* sample01.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = sample01.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		938EBE411882B91E00F6F6F0 = {
 			isa = PBXGroup;
 			children = (
+				938EBE921882D43400F6F6F0 /* sample01.icns */,
 				938EBE811882B92900F6F6F0 /* information */,
 				938EBE531882B91E00F6F6F0 /* sample01 */,
 				938EBE711882B91E00F6F6F0 /* sample01Tests */,
@@ -247,10 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				938EBE581882B91E00F6F6F0 /* InfoPlist.strings in Resources */,
+				938EBE931882D43400F6F6F0 /* sample01.icns in Resources */,
 				938EBE861882B94600F6F6F0 /* InfoWindow.xib in Resources */,
 				938EBE661882B91E00F6F6F0 /* Images.xcassets in Resources */,
 				938EBE5E1882B91E00F6F6F0 /* Credits.rtf in Resources */,
 				938EBE641882B91E00F6F6F0 /* MainMenu.xib in Resources */,
+				938EBE881882D0AB00F6F6F0 /* sample01-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sample01/sample01-Prefix.pch";
 				INFOPLIST_FILE = "sample01/sample01-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,6 +425,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sample01/sample01-Prefix.pch";
 				INFOPLIST_FILE = "sample01/sample01-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

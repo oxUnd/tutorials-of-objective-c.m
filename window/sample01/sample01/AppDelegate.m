@@ -15,6 +15,7 @@
 {
     // Insert code here to initialize your application
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateShowInformationTextView) name:@"updateShowInformationTextView" object:Nil];
+    [_window setReleasedWhenClosed:NO];
 }
 
 - (IBAction)onOpenAChildWindow:(id)sender {
@@ -34,4 +35,10 @@
         [showInformationTextView setString: [infoWindow information]];
     }
 }
+
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL) flag {
+    [_window setIsVisible:YES];
+    return YES;
+}
+
 @end
